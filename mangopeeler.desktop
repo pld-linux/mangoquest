@@ -4,6 +4,6 @@ Comment=Map editor for The Blue Mango Quest
 Comment[pl]=Edytor map dla The Blue Mango Quest
 Icon=mangoquest.png
 Exec=mangopeeler
-Terminal=0
+Terminal=false
 Type=Application
 # vi: encoding=utf-8
