@@ -2,7 +2,7 @@ Summary:	The Blue Mago Quest - pacman style 3D game
 Summary(pl):	The Blue Mago Quest - gra 3D w stylu pacman
 Name:		mangoquest
 Version:	0.6.3a
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
@@ -13,7 +13,7 @@ URL:		http://mangoquest.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
-BuildRequires:	SDL_ttf-devel
+BuildRequires:	SDL_ttf-devel >= 2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 Requires:	OpenGL
@@ -63,14 +63,13 @@ install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 rm -rf %{_datadir}/%{name}/doc
 
 mv -f mangopeeler/ChangeLog ChangeLog-mangopeeler
-gzip -9nf README NEWS TODO AUTHORS ChangeLog ChangeLog-mangopeeler
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/manuals
+%doc README NEWS TODO AUTHORS ChangeLog ChangeLog-mangopeeler doc/manuals
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}goquest
 %{_mandir}gopeeler
