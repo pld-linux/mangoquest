@@ -7,4 +7,5 @@ Icon=mangoquest.png
 Exec=mangopeeler
 Terminal=false
 Type=Application
+Categories=Game;ArcadeGame;
 # vi: encoding=utf-8
