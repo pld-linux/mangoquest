@@ -2,7 +2,7 @@ Summary:	The Blue Mago Quest - pacman style 3D game
 Summary(pl):	The Blue Mago Quest - gra 3D w stylu pacman
 Name:		mangoquest
 Version:	0.6.3a
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
