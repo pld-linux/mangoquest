@@ -1,0 +1,6 @@
+diff -durN mangoquest-0.6.1.orig/Makefile.am mangoquest-0.6.1/Makefile.am
+--- mangoquest-0.6.1.orig/Makefile.am	Fri Aug  3 22:09:04 2001
++++ mangoquest-0.6.1/Makefile.am	Tue Aug  7 10:34:20 2001
+@@ -1 +1 @@
+-SUBDIRS=src game_data doc mangopeeler
++SUBDIRS=src game_data mangopeeler
