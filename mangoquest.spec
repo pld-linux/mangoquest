@@ -20,7 +20,6 @@ Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_noautoreqdep	libGL.so.1 libGLU.so.1
-%define		_prefix		/usr/X11R6
 
 %description
 The Blue Mango Quest is a 3D arcade game that uses OpenGL and SDL. The
