@@ -43,7 +43,7 @@ sprawi± du¿o frajdy. Dostêpny jest tak¿e edytor poziomów.
 rm -f missing acinclude.m4
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	LDFLAGS="%{rpmldflags} -L%{_libdir}" \
 	CPPFLAGS="-I%{_includedir}"
