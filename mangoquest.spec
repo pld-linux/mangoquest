@@ -5,7 +5,7 @@ Version:	0.6.3a
 Release:	3
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 Source2:	mangopeeler.desktop
 Source3:	%{name}.png
