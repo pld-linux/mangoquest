@@ -58,9 +58,9 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games/Arcade,%{_pixmapsdir}}
 
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/%{name}.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade/%{name}.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade/mangopeeler.desktop
-install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
+install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 rm -rf %{_datadir}/%{name}/doc
 
