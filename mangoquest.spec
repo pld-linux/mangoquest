@@ -41,7 +41,7 @@ sprawi± du¿o frajdy. Dostêpny jest tak¿e edytor poziomów.
 
 %build
 rm -f missing acinclude.m4
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
