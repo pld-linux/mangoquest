@@ -2,7 +2,7 @@ Summary:	The Blue Mago Quest - pacman style 3D game
 Summary(pl):	The Blue Mago Quest - gra 3D w stylu pacman
 Name:		mangoquest
 Version:	0.6.3a
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
@@ -52,12 +52,12 @@ rm -f missing acinclude.m4
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games/Arcade,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade/%{name}.desktop
-install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/Arcade/mangopeeler.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
+install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}/mangopeeler.desktop
 install %{SOURCE3} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 rm -rf %{_datadir}/%{name}/doc
@@ -73,5 +73,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}goquest
 %{_mandir}gopeeler
-%{_applnkdir}/Games/Arcade/*
+%{_desktopdir}/*
 %{_pixmapsdir}/*
