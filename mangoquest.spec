@@ -32,8 +32,8 @@ of fun. An easy to use yet powerfull 2D level editor is also provided.
 %description -l pl
 The Blue Mango Quest to trójwymiarowa gra zrêczno¶ciowa wykorzystuj±ca
 OpenGL i SDL. Jej celem jest wielostronne rozszerzenie gry w stylu
-pacmana. Widzisz to co widzi g³ówny bohater (jak w tradycyjnych
-grach FPS), i mo¿esz znale¼æ oko³o 20 przedmiotów (bonusów itp.) które
+pacmana. Widzisz to co widzi g³ówny bohater (jak w tradycyjnych grach
+FPS), i mo¿esz znale¼æ oko³o 20 przedmiotów (bonusów itp.) które
 sprawi± du¿o frajdy. Dostêpny jest tak¿e edytor poziomów.
 
 %prep
@@ -46,9 +46,9 @@ autoconf
 automake -a -c
 %configure \
 	LDFLAGS="%{rpmldflags} -L%{_libdir}" \
-	CPPFLAGS="-I%{_includedir}" 
+	CPPFLAGS="-I%{_includedir}"
 
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
