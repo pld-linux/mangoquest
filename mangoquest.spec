@@ -1,7 +1,7 @@
 Summary:	The Blue Mago Quest - pacman style 3D game
 Summary(pl):	The Blue Mago Quest - gra 3D w stylu pacman
 Name:		mangoquest
-Version:	0.6.1
+Version:	0.6.3a
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
@@ -10,12 +10,11 @@ Group(pl):	X11/Aplikacje/Gry
 Source0:	http://prdownloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 Source1:	%{name}.desktop
 Source2:	mangopeeler.desktop
-Patch0:		%{name}-CFLAGS.patch
-Patch1:		%{name}-DESTDIR.patch
-Patch2:		%{name}-nodoc.patch
 URL:		http://%{name}.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
+BuildRequires:	SDL_image-devel
+BuildRequires:	SDL_ttf-devel
 Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,9 +38,6 @@ tak¿e edytor poziomów.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
 
 %build
 automake
@@ -52,10 +48,6 @@ autoconf
 
 %{__make} 
 
-bunzip2 -c doc/manuals.tar.bz2 | tar xf - -C doc/
-mv doc/home/phneutre/Developpement/ShmiX/Web/sourceforge/doc doc/manuals
-chmod -R a-x,a+rX doc/manuals
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Games
@@ -65,6 +57,8 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Games
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/%{name}.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_applnkdir}/Games/mangopeeler.desktop
 
+rm -rf %{_datadir}/%{name}/doc
+
 mv mangopeeler/ChangeLog ChangeLog-mangopeeler
 gzip -9nf README NEWS TODO AUTHORS ChangeLog ChangeLog-mangopeeler
 
@@ -73,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/manuals doc/*.fig.gz
+%doc *.gz doc/manuals
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/mangoquest
 %{_datadir}/mangopeeler
