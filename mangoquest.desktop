@@ -2,6 +2,7 @@
 Name=The Blue Mago Quest
 Comment=Pacman style 3D game
 Comment[pl]=Gra 3D w stylu pacman
+Icon=mangoquest.png
 Exec=mangoquest
 Terminal=0
 Type=Application
