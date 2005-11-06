@@ -45,7 +45,6 @@ rm -f missing acinclude.m4
 %{__autoconf}
 %{__automake}
 
-# without this %configure will fail.
 cd mangopeeler
 rm -f missing acinclude.m4
 %{__aclocal}
