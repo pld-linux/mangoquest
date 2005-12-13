@@ -5,7 +5,7 @@ Version:	0.6.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://dl.sourceforge.net/mangoquest/%{name}-%{version}.tar.bz2
 # Source0-md5:	2433d792151bd87baacb33935b1e94d1
 Source1:	%{name}.desktop
 Source2:	mangopeeler.desktop
