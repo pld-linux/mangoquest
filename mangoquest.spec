@@ -1,5 +1,5 @@
 Summary:	The Blue Mago Quest - pacman style 3D game
-Summary(pl):	The Blue Mago Quest - gra 3D w stylu pacman
+Summary(pl.UTF-8):   The Blue Mago Quest - gra 3D w stylu pacman
 Name:		mangoquest
 Version:	0.6.4
 Release:	1
@@ -29,12 +29,12 @@ what the main character sees (like in traditional FPS games), and
 you'll find about 20 items (bonus and malus) that will give you a lot
 of fun. An easy to use yet powerfull 2D level editor is also provided.
 
-%description -l pl
-The Blue Mango Quest to trójwymiarowa gra zrêczno¶ciowa wykorzystuj±ca
+%description -l pl.UTF-8
+The Blue Mango Quest to trÃ³jwymiarowa gra zrÄ™cznoÅ›ciowa wykorzystujÄ…ca
 OpenGL i SDL. Jej celem jest wielostronne rozszerzenie gry w stylu
-pacmana. Widzisz to co widzi g³ówny bohater (jak w tradycyjnych grach
-FPS), i mo¿esz znale¼æ oko³o 20 przedmiotów (bonusów itp.) które
-sprawi± du¿o frajdy. Dostêpny jest tak¿e edytor poziomów.
+pacmana. Widzisz to co widzi gÅ‚Ã³wny bohater (jak w tradycyjnych grach
+FPS), i moÅ¼esz znaleÅºÄ‡ okoÅ‚o 20 przedmiotÃ³w (bonusÃ³w itp.) ktÃ³re
+sprawiÄ… duÅ¼o frajdy. DostÄ™pny jest takÅ¼e edytor poziomÃ³w.
 
 %prep
 %setup -q
