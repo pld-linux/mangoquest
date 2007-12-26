@@ -2,10 +2,9 @@
 Name=The Blue Mago Quest
 Comment=Pacman style 3D game
 Comment[pl]=Trójwymiarowa gra w stylu pacmana
-Icon=mangoquest.png
+Icon=mangoquest
 Exec=mangoquest
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=Game;ArcadeGame;
 # vi: encoding=utf-8

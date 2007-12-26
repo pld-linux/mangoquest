@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Mango Peeler
 Comment=Map editor for The Blue Mango Quest
 Comment[pl]=Edytor map dla The Blue Mango Quest
-Icon=mangoquest.png
+Icon=mangoquest
 Exec=mangopeeler
 Terminal=false
 Type=Application
